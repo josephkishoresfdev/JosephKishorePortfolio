@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Joseph Kishore | Salesforce Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        .trailhead-bg {
+            background: linear-gradient(180deg, #fffbe6 0 60%, #f4f6f9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trailhead-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 240px;
+            z-index: 0;
+            pointer-events: none;
+            /* avoid making it scroll with content */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <!-- Trailhead style background container -->
+    <div class="trailhead-bg min-h-[380px] w-full relative">
+        <!-- SVG background positioned absolutely and behind card -->
+        <svg class="trailhead-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="hill" gradientTransform="rotate(10)">
+                    <stop offset="0%" stop-color="#d3e7b2" />
+                    <stop offset="100%" stop-color="#fffbe6" />
+                </linearGradient>
+                <linearGradient id="mountain" gradientTransform="rotate(-10)">
+                    <stop offset="0%" stop-color="#a3c48b" />
+                    <stop offset="100%" stop-color="#c1dbb3" />
+                </linearGradient>
+                <linearGradient id="sun" gradientTransform="rotate(10)">
+                    <stop offset="0%" stop-color="#ff6044" />
+                    <stop offset="100%" stop-color="#fffbe6" />
+                </linearGradient>
+            </defs>
+            <!-- Sun -->
+            <circle cx="1200" cy="100" r="80" fill="url(#sun)" opacity="0.3" />
+            <!-- Distant hills -->
+            <path fill="url(#hill)" d="M0,160 C200,80 400,160 600,140 C800,120 1000,180 1440,120 L1440,320 L0,320Z" />
+            <!-- Foreground mountains -->
+            <path fill="url(#mountain)"
+                d="M0,220 C250,280 600,100 900,190 C1100,250 1300,150 1440,210 L1440,320 L0,320Z" />
+            <!-- Trees (simple triangles) -->
+            <polygon points="130 210, 145 165, 160 210" fill="#4c7c41" />
+            <polygon points="200 230, 215 185, 230 230" fill="#4c7c41" />
+            <polygon points="320 200, 335 160, 350 200" fill="#4c7c41" />
+            <polygon points="420 170, 435 130, 450 170" fill="#4c7c41" opacity="0.75" />
+            <polygon points="1350 210, 1365 165, 1380 210" fill="#4c7c41" />
+            <polygon points="1260 220, 1275 180, 1290 220" fill="#4c7c41" opacity="0.8" />
+        </svg>
+        <!-- Card: positioned relatively, on top of SVG -->
+        <main class="relative z-10 flex justify-center pt-[20vh]">
+            <div class="w-full max-w-5xl mx-4 sm:mx-8 md:mx-8">
+                <section>
+                    <div
+                        class="bg-white rounded-xl shadow p-6 grid grid-cols-1 md:grid-cols-[auto,1fr] gap-8 items-center">
+                        <div class="max-w-3xl mx-auto px-4 py-8 flex flex-col items-center">
+                            <img src="assets/profile.jpg" alt="Joseph Kishore"
+                                class="w-36 h-36 rounded-2xl shadow-lg object-cover mb-4" />
+                            <h1 class="text-3xl font-bold mb-2">Joseph Kishore</h1>
+                            <div class="text-blue-700 font-semibold mb-4">Salesforce Developer</div>
+                            <div class="flex gap-4">
+                                <a href="https://www.linkedin.com/in/josephkishoresfdev/" target="_blank"
+                                    class="text-gray-500 hover:text-blue-700 text-2xl" aria-label="LinkedIn"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/josephkishoresfdev" target="_blank"
+                                    class="text-gray-500 hover:text-gray-900 text-2xl" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="mailto:josephkishoresfdev@gmail.com"
+                                    class="text-gray-500 hover:text-red-600 text-2xl" aria-label="Email"><i
+                                        class="fas fa-envelope"></i></a>
+                                <a href="https://www.salesforce.com/trailblazer/josephkishoresfdev" target="_blank"
+                                    class="text-gray-500 hover:text-indigo-700 text-2xl" aria-label="Trailhead"><i
+                                        class="fab fa-salesforce"></i></a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold mb-2 text-blue-700">About Me</h2>
+                            <p>
+                                I'm a Salesforce Developer with 4 years of solid experience, primarily focused on Sales
+                                Cloud, along with foundational knowledge in CPQ and Service Cloud.
+                                I’ve built scalable, customized solutions using Apex, Lightning Web Components, and
+                                Salesforce integrations to streamline business processes and improve user experience.
+                            </p>
+                            <p class="mt-3">
+                                I’m passionate about writing clean, efficient code and continuously upskilling in
+                                emerging Salesforce technologies.
+                                Outside work, I maintain a disciplined lifestyle and enjoy fitness, even if I’m still
+                                working on getting fit.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <!-- Skills Section -->
+    <main class="relative max-w-5xl mx-auto px-4 py-10 space-y-12">
+        <section>
+            <h2 class="text-xl font-semibold mb-2 text-blue-700">Skills</h2>
+            <div class="bg-white rounded-xl shadow p-6 flex flex-wrap gap-3">
+                <span class="bg-blue-100 text-blue-800 font-medium px-3 py-1 rounded-full text-sm">Apex</span>
+                <span class="bg-blue-100 text-blue-800 font-medium px-3 py-1 rounded-full text-sm">Lightning Web
+                    Components (LWC)</span>
+                <span class="bg-blue-100 text-blue-800 font-medium px-3 py-1 rounded-full text-sm">Integration</span>
+                <span class="bg-blue-100 text-blue-800 font-medium px-3 py-1 rounded-full text-sm">Sales Cloud</span>
+                <span class="bg-blue-100 text-blue-800 font-medium px-3 py-1 rounded-full text-sm">CPQ</span>
+                <span class="bg-blue-100 text-blue-800 font-medium px-3 py-1 rounded-full text-sm">Service Cloud</span>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-xl font-semibold mb-2 text-blue-700">Certifications</h2>
+            <div class="bg-white rounded-xl shadow p-6">
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Salesforce Certified Administrator</li>
+                    <li>Salesforce Certified Associate</li>
+                    <li>Platform App Builder</li>
+                    <li>Platform Developer 1</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-xl font-semibold mb-2 text-blue-700">Projects</h2>
+            <div class="bg-white rounded-xl shadow p-6">
+                <div>
+                    <h3 class="font-semibold text-lg mb-1">ToDo Manager using LWC</h3>
+                    <div class="text-gray-500 text-sm mb-2">Salesforce Lightning Web Components, Apex</div>
+                    <p class="mb-3">
+                        This component is designed to manage to-do items. It allows users to view, create, update, and
+                        delete to-do items. The component is built using Salesforce Lightning Web Components (LWC) and
+                        leverages an Apex controller for backend operations.
+                    </p>
+                    <a href="https://github.com/josephkishoresfdev/ToDo-LWC-JK" target="_blank"
+                        class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm font-semibold">
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
