@@ -1,2 +1,2 @@
 # JosephKishoreRaju
-this would be my goto page for introduction and Language portfolio
+this would be my goto page for introduction and  portfolio
