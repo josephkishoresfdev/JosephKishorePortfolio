@@ -8,8 +8,7 @@ This is a personal portfolio website built with plain HTML and CSS (using [Tailw
 ## 🚀 Live Site
 
 You can view the portfolio live at:  
-[https://josephkishoresfdev.github.io/](https://josephkishoresfdev.github.io/)
-
+[https://josephkishoresfdev.github.io/JosephKishorePortfolio/](https://josephkishoresfdev.github.io/JosephKishorePortfolio/)
 ---
 
 ## 📂 Project Structure
